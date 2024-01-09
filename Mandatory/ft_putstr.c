@@ -6,11 +6,11 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 20:45:53 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/05 17:24:25 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:20:04 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
 
 void	ft_putstr(const char *str)
 {

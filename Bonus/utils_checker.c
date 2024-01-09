@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_add_back.c                                      :+:      :+:    :+:   */
+/*   utils_checker.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/03 12:32:06 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/06 21:08:40 by zelabbas         ###   ########.fr       */
+/*   Created: 2024/01/08 11:13:37 by zelabbas          #+#    #+#             */
+/*   Updated: 2024/01/09 14:47:36 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
 
 t_stack	*ft_new_node(int data)
 {
@@ -18,10 +18,7 @@ t_stack	*ft_new_node(int data)
 
 	node = malloc(sizeof(t_stack));
 	if (!node)
-	{
-		printf("9awdtiha");
 		return (NULL);
-	}
 	node->next = NULL;
 	node->prev = NULL;
 	node->data = data;
@@ -42,9 +39,7 @@ int	ft_add_to_stack(t_stack **list, int data)
 	{
 		tmp = *list;
 		if (!(*list))
-		{
 			*list = new_node;
-		}
 		else
 		{
 			while (tmp->next)
@@ -56,15 +51,53 @@ int	ft_add_to_stack(t_stack **list, int data)
 	}
 }
 
-void	ft_last_node(t_stack **x, t_stack **ptr)
+t_command	*ft_new_command(char *line)
+{
+	t_command	*node;
+
+	node = malloc(sizeof(t_command));
+	if (!node)
+		return (NULL);
+	node->next = NULL;
+	node->command = line;
+	return (node);
+}
+
+int	ft_add_comand_to_back(t_command **list_command, char *line)
+{
+	t_command	*new_command;
+	t_command	*tmp;
+
+	if (!list_command)
+		return (0);
+	new_command = ft_new_command(line);
+	if (!new_command)
+		return (0);
+	else
+	{
+		tmp = *list_command;
+		if (!*list_command)
+			*list_command = new_command;
+		else
+		{
+			while (tmp->next)
+				tmp = tmp->next;
+			tmp->next = new_command;
+		}
+		return (1);
+	}
+}
+
+int	stack_is_sorted(t_stack *x)
 {
 	t_stack	*tmp;
 
-	if (x && (*x))
+	tmp = x;
+	while (tmp && tmp->next)
 	{
-		tmp = *x;
-		while (tmp->next)
-			tmp = tmp->next;
-		(*ptr) = tmp;
+		if (tmp->data > tmp->next->data)
+			return (0);
+		tmp = tmp->next;
 	}
+	return (1);
 }

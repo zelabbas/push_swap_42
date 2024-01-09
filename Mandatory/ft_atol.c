@@ -6,11 +6,11 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 14:35:24 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/05 17:21:04 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/09 15:40:37 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
 
 long	ft_atol(const char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 21:11:56 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/05 17:05:40 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:19:17 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
 
 int	check_syntax(const char *str)
 {

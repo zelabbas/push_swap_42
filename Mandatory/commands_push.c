@@ -6,11 +6,11 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 12:26:09 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/06 21:26:40 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:19:47 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
 
 void	ft_push(t_stack **a, t_stack **b)
 {

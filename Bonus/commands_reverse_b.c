@@ -1,20 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   commands_reverse.c                                 :+:      :+:    :+:   */
+/*   commands_reverse_b.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 12:31:57 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/07 12:47:59 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/08 13:03:39 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
+
+void	ft_last_node(t_stack **x, t_stack **ptr)
+{
+	t_stack	*tmp;
+
+	if (x && (*x))
+	{
+		tmp = *x;
+		while (tmp->next)
+			tmp = tmp->next;
+		(*ptr) = tmp;
+	}
+}
 
 void	ft_reverse_stack(t_stack **x)
 {
 	t_stack	*last;
+
 	if ((*x)->next)
 	{
 		ft_last_node(x, &last);
@@ -31,7 +45,6 @@ void	rra(t_stack **a)
 	if (a && (*a))
 	{
 		ft_reverse_stack(a);
-		write(1, "rra\n", 4);
 	}
 }
 
@@ -40,7 +53,6 @@ void	rrb(t_stack **b)
 	if (b && (*b))
 	{
 		ft_reverse_stack(b);
-		write(1, "rrb\n", 4);
 	}
 }
 
@@ -52,6 +64,5 @@ void	rrr(t_stack **a, t_stack **b)
 			ft_reverse_stack(a);
 		if (b && (*b))
 			ft_reverse_stack(b);
-		write(1, "rrr\n", 4);
 	}
 }

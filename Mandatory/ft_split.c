@@ -6,11 +6,11 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 12:54:08 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/05 17:21:21 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/08 10:20:07 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push.h"
+#include "../Includes/push.h"
 
 static int	check_separator(char s, char charset)
 {
