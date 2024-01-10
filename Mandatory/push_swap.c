@@ -6,7 +6,7 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/07 19:01:49 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/09 14:56:13 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/10 21:45:21 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,11 +78,11 @@ void	start_handling(t_stack **a, t_stack **b, int ac, char **argv)
 	char	*tmp;
 	int		i;
 
+	check_empty_string(argv + 1);
 	str = ft_strdup("");
 	if (!str)
 		ft_error();
 	i = 1;
-	check_empty_string(argv + 1);
 	while (i < ac)
 	{
 		tmp = str;

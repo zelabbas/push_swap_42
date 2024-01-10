@@ -6,7 +6,7 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 10:46:41 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/09 14:57:06 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/10 21:46:36 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,8 @@ void	get_commnds(char **argv, t_stack **a, t_stack **b)
 	{
 		line = get_next_line(0);
 		if (!check_oprts(line))
-			return (free(line), ft_free_stack(a, true));
+			return (free(line), ft_free_list(&list_commands)
+				, ft_free_stack(a, true));
 		if (!ft_add_comand_to_back(&list_commands, line))
 			return (free(line), ft_free_list(&list_commands)
 				, ft_free_stack(a, true));
@@ -64,11 +65,11 @@ void	start_handling(t_stack **a, t_stack **b, int ac, char **argv)
 	int		i;
 	char	*tmp;
 
+	check_empty_string(argv + 1);
 	str = ft_strdup("");
 	if (!str)
 		ft_error();
 	i = 1;
-	check_empty_string(argv + 1);
 	while (i < ac)
 	{
 		tmp = str;
