@@ -6,17 +6,13 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 12:29:42 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/09 17:53:05 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/10 21:57:12 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_H
 # define PUSH_H
 
-# include <stdlib.h>
-# include <stdio.h>
-# include <unistd.h>
-# include <limits.h>
 # include <stdbool.h>
 # include "get_next_line.h"
 
