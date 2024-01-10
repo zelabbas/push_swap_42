@@ -61,9 +61,10 @@ For Bonus :
 exmple usage :
 ```./checker 47 6 3 7 45 50 0 1```
 ## Resources
--[PUSH_SWAP] :https://mediumcom@jamierobertdawsonpush-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a
+
 -[42-cursus] : https://42-cursus.gitbook.io/guide/rank-02/push_swap
--[linked-list] : https://youtu.be/eziJvq1f3HQ?si=l-oIUS6L7pe24x3q
+
+-[linked-list] : https://youtu.be/mkdop749J8Q?si=X7BMXXz-Zo2i3REp
 
 ##### BY zelabbas
 
