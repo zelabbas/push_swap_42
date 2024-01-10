@@ -64,7 +64,7 @@ exmple usage :
 
 -[42-cursus] : https://42-cursus.gitbook.io/guide/rank-02/push_swap
 
--[linked-list] : https://youtu.be/mkdop749J8Q?si=X7BMXXz-Zo2i3REp
+-[linked-list] : https://youtube.com/playlist?list=PL-xf44VEEzDvoSUfauaGT-pfJu4j9aNjd&si=P2ayyQVx54lrNdii
 
 ##### BY zelabbas
 
