@@ -25,7 +25,7 @@ Push_swap is a project that challenges you to implement a sorting algorithm for 
 
 ## Constraints:
 ```
-	You must implement an algorithm that sorts the numbers.
+   You must implement an algorithm that sorts the numbers.
    The number of moves should be minimized.
    The operations must be performed based on the rules defined.
 ```
