@@ -6,7 +6,7 @@
 /*   By: zelabbas <zelabbas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 10:46:41 by zelabbas          #+#    #+#             */
-/*   Updated: 2024/01/10 21:46:36 by zelabbas         ###   ########.fr       */
+/*   Updated: 2024/01/11 10:17:25 by zelabbas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,9 +99,9 @@ int	main(int argc, char **argv)
 	stack_b = NULL;
 	start_handling(&stack_a, &stack_b, argc, argv);
 	if (stack_is_sorted(stack_a) && size_stack(stack_b) == 0)
-		printf("OK\n");
+		write(1, "OK\n", 3);
 	else
-		printf("KO\n");
+		write(1, "KO\n", 3);
 	ft_free_stack(&stack_a, false);
 	ft_free_stack(&stack_b, false);
 	return (0);
